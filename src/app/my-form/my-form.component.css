@@ -1,0 +1,716 @@
+.container-mid
+{
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.content
+{
+  position: absolute;
+  z-index: 1;
+
+  overflow-x: hidden;
+
+  width: 100%;
+  height: 100%;
+}
+.up-button
+{
+  position: absolute;
+  z-index: 120;
+  top: 0;
+  left: 50%;
+
+  overflow: hidden;
+
+  width: 70px;
+  height: 0;
+
+  cursor: pointer;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  transition: all 400ms ease;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  background: rgba(255,255,255,1.00);
+}
+
+.up-button.active
+{
+  height: 70px;
+}
+
+.up-button i
+{
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 70px;
+
+  position: absolute;
+
+  width: inherit;
+  height: inherit;
+
+  -webkit-transition: all 200ms cubic-bezier(1, 0, 0, 1);
+  -moz-transition: all 200ms cubic-bezier(1, 0, 0, 1);
+  transition: all 200ms cubic-bezier(1, 0, 0, 1);
+  text-align: center;
+
+  color: #000;
+}
+
+.up-button i:first-child
+{
+  transform: translateY(100px);
+}
+
+.up-button:hover i:first-child
+{
+  transform: translateY(0px);
+}
+
+.up-button:hover i:last-child
+{
+  transform: translateY(-100px);
+}
+
+/** 6. OVERLAY-CONTENT-ABOUT
+*****************************************************************/
+#about{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 3;
+}
+#about h1
+{
+  font-family: 'Raleway', sans-serif;
+  font-size: 41px;
+  font-weight: 400;
+
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #fff;
+}
+#about h3
+{
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  line-height: auto;
+  font-size: 30px;
+  color: #fff;
+}
+
+#about p
+{
+  font-size: 13px;
+
+  max-width: 600px;
+  margin: 0 auto 34px auto;
+
+  text-align: justify;
+
+  color: #ccc;
+}
+
+#about .subscribe-form
+{
+  display: block;
+
+  max-width: 470px;
+  margin: 0 auto 34px auto;
+
+  background: rgba(255, 255, 255, .0);
+}
+
+#about .subscribe-form.success .input-group
+{
+  cursor: not-allowed;
+}
+
+#about .subscribe-form input
+{
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px !important;
+  font-weight: 300;
+
+  -webkit-transition: all .3s ease 0s;
+  -moz-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+  letter-spacing: 1px;
+
+  color: #d6d6d6;
+  border: none;
+  border: 1px solid #d6d6d6;
+  border-right: none !important;
+  border-radius: 0 !important;
+  background: rgba(255,255,255,0);
+  box-shadow: none;
+}
+
+#about .subscribe-form.error input
+{
+  border-color: rgba(251, 9, 9, 1) !important;
+}
+
+#about .subscribe-form.success input
+{
+  border-color: rgba(95, 234, 110, 1)!important;
+  background: rgba(255,255,255,.00) !important;
+}
+
+#about .subscribe-form input::-webkit-input-placeholder
+{
+  color: #d6d6d6;
+}
+
+#about .subscribe-form input::-moz-placeholder
+{
+  color: #d6d6d6;
+}
+
+#about .subscribe-form input:focus,
+#about .subscribe-form input:active
+{
+  color: #ccc;
+  border-color: #d6d6d6;
+  outline: none;
+  background: rgba(255,255,255,.06);
+  box-shadow: none;
+}
+
+#about .subscribe-form button
+{
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px !important;
+  font-weight: 300;
+
+  overflow: hidden;
+
+  margin-left: 0 !important;
+  padding: 0 40px !important;
+
+  -webkit-transition: all .3s ease 0s;
+  -moz-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #000;
+  border: 0;
+  border: 1px solid #d6d6d6;
+  border-radius: 0 !important;
+  background: rgba(255,255,255,1);
+  box-shadow: none;
+}
+
+#about .subscribe-form.success button
+{
+  cursor: not-allowed;
+
+  border-color: rgba(95, 234, 110, 1) !important;
+  background: rgba(95, 234, 110, 1) !important;
+}
+
+#about .subscribe-form.error button
+{
+  border-color: rgba(251, 9, 9, 1) !important;
+  background: rgba(251, 9, 9, 1) !important;
+}
+
+#about .subscribe-form button:hover,
+#about .subscribe-form button:focus,
+#about .subscribe-form button:active
+{
+  color: #000;
+  border-color: #d6d6d6;
+  outline: none !important;
+  background: rgba(255,255,255,.00);
+}
+
+#about .subscribe-form button:hover
+{
+  background: rgba(255,255,255,.00) !important;
+}
+
+#about .subscribe-form button:focus,
+#about .subscribe-form button:active
+{
+  background: rgba(255,255,255,1);
+}
+
+#about .subscribe-form .btn-primary[disabled]
+{
+  opacity: 1;
+  color: #fff;
+  border: 1px solid #fff ;
+  outline: none ;
+  background: rgba(255,255,255,1);
+}
+
+#about .subscribe-form.error button:hover,
+#about .subscribe-form.error button:focus,
+#about .subscribe-form.error button:active
+{
+  border-color: rgba(251, 9, 9, 1);
+}
+
+#about .subscribe-form button::before
+{
+  z-index: -1;
+  top: 0;
+  right: auto;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  content: '';
+  -webkit-transition: all .2s ease 0s;
+  -moz-transition: all .2s ease 0s;
+  transition: all .2s ease 0s;
+
+  background: rgba(255,255,255,1);
+}
+
+#about .subscribe-form.success button::before
+{
+  background: rgba(95, 234, 110, 1) !important;
+}
+
+#about .subscribe-form.error button::before
+{
+  background: rgba(251, 9, 9, 1) !important;
+}
+
+#about .subscribe-form.succes button::before
+{
+  background: rgba(255,255,255,1);
+}
+
+#about .subscribe-form button:hover::before
+{
+  right: 0;
+  left: auto;
+
+  width: 0;
+}
+
+#about .subscribe-form.success button:hover::before
+{
+  right: auto !important;
+  left: 0 !important;
+
+  width: 100% !important;
+}
+
+#about .subscribe-form button i
+{
+  font-weight: normal;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 100%;
+  height: auto;
+
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#about .subscribe-form button:hover i
+{
+  -webkit-transition: all .2s ease 0s;
+  -moz-transition: all .2s ease 0s;
+  transition: all .2s ease 0s;
+}
+
+#about .subscribe-form button i.first
+{
+  left: -200%;
+
+  color: #fff;
+}
+
+#about .subscribe-form button i.second
+{
+  left: 0;
+}
+
+#about .subscribe-form button:hover i.first
+{
+  left: 0;
+}
+
+#about .subscribe-form button:hover i.second
+{
+  left: 200%;
+}
+
+#about .subscribe-form.error button i.second:before
+{
+  content: '\e646';
+
+  color: #fff;
+}
+
+#about .subscribe-form.success button i.second:before
+{
+  content: '\e64c';
+
+  color: #fff;
+}
+
+#about .subscribe-form.success button:hover i.first
+{
+  left: -200%;
+}
+
+#about .subscribe-form.success button:hover i.second
+{
+  left: 0;
+}
+
+#about .social-icons
+{
+  margin: 10px 0 0 0;
+  padding: 0;
+
+  list-style: none;
+
+  text-align: center;
+}
+
+#about .social-icons li
+{
+  display: inline-block;
+
+  margin: 0 15px;
+}
+
+#about .social-icons li a
+{
+  font-size: 11px;
+  line-height: 40px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  width: 40px;
+  height: 40px;
+
+  color: #000;
+  border-radius: 0;
+  background: rgba(255,255,255,.06);
+}
+
+#about .social-icons li a .overlay
+{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: auto;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  -webkit-transition: all .2s ease 0s;
+  -moz-transition: all .2s ease 0s;
+  transition: all .2s ease 0s;
+
+  background: rgba(255,255,255,1);
+}
+
+#about .social-icons li a:hover .overlay
+{
+  right: 0;
+  left: auto;
+
+  width: 0;
+}
+
+#about .social-icons li a:hover
+{
+  color: #fff;
+  background: rgba(255,255,255,.06);
+}
+
+
+
+
+
+/** 9. MEDIA QUERIES
+*****************************************************************/
+@media screen and (max-width: 1400px), screen and (max-height: 720px)
+{
+  .tooltip.bottom .tooltip-inner
+  {
+    font-size: 10px;
+  }
+
+  .up-button
+  {
+    width: 60px;
+  }
+
+  .up-button.active
+  {
+    height: 60px;
+  }
+
+  .up-button i
+  {
+    font-size: 14px;
+    line-height: 60px;
+  }
+
+
+  #about h1
+  {
+    font-size: 31px;
+
+    margin-bottom: 20px;
+
+    letter-spacing: 1px;
+  }
+
+  #about p
+  {
+    font-size: 10px;
+
+    max-width: 460px;
+    margin: 0 auto 28px auto;
+  }
+
+  #about .subscribe-form
+  {
+    max-width: 390px;
+    margin: 0 auto 27px auto;
+  }
+
+  .input-group-lg > .form-control,
+  .input-group-lg > .input-group-addon,
+  .input-group-lg > .input-group-btn > .btn
+  {
+    height: 37px;
+  }
+
+  #about .social-icons li
+  {
+    display: inline-block;
+
+    margin: 0 10px;
+  }
+
+  #about .social-icons li a
+  {
+    font-size: 9px;
+    line-height: 30px;
+
+    width: 31px;
+    height: 31px;
+  }
+
+  #about .subscribe-form button
+  {
+    font-size: 9px !important;
+
+    padding: 0 34px !important;
+  }
+
+  #about .subscribe-form input
+  {
+    font-size: 9px !important;
+  }
+
+}
+
+@media screen and (max-width: 420px), screen and (max-height: 720px)
+{
+  .spinner
+  {
+    width: 100px;
+  }
+
+  .tooltip.bottom .tooltip-inner
+  {
+    font-size: 8px;
+  }
+
+  .up-button
+  {
+    width: 50px;
+  }
+
+  .up-button.active
+  {
+    height: 50px;
+  }
+
+  .up-button i
+  {
+    font-size: 11px;
+    line-height: 50px;
+  }
+
+  #about h1
+  {
+    font-size: 30px;
+  }
+
+  #about .subscribe-form input
+  {
+    font-size: 7px !important;
+  }
+
+  #about .social-icons li
+  {
+    margin: 0 14px;
+  }
+
+}
+
+@media screen and (max-width: 329px)
+{
+  #about .social-icons li
+  {
+    margin: 0 10px;
+  }
+
+  .input-group-lg > .form-control,
+  .input-group-lg > .input-group-addon,
+  .input-group-lg > .input-group-btn > .btn
+  {
+    padding: 10px 12px;
+  }
+}
+
+@media screen and (max-width: 318px)
+{
+  #about .social-icons li
+  {
+    margin: 0 8px;
+  }
+
+  #about .subscribe-form .input-group
+  {
+    display: block;
+  }
+
+  #about .subscribe-form input
+  {
+    display: block;
+
+    text-align: center;
+
+    border-right: 1px solid #d6d6d6 !important;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+
+  .spinner {
+    width: 240px;
+  }
+
+  .up-button {
+    width: 100px;
+  }
+
+  .up-button.active {
+    height: 100px;
+  }
+
+  .up-button i {
+    font-size: 20px;
+    line-height: 100px;
+  }
+
+  #overlay .container-mid .container {
+    padding: 120px 40px;
+  }
+
+  #about h1 {
+    font-size: 51px;
+
+    margin-bottom: 40px;
+
+    letter-spacing: 3px;
+  }
+
+  #about p {
+    font-size: 17px;
+
+    max-width: 790px;
+    margin: 0 auto 50px auto;
+  }
+
+  #about .subscribe-form {
+    max-width: 630px;
+    margin: 0 auto 44px auto;
+  }
+
+  .input-group-lg > .form-control,
+  .input-group-lg > .input-group-addon,
+  .input-group-lg > .input-group-btn > .btn {
+    height: 56px;
+  }
+
+  #about .social-icons li {
+    display: inline-block;
+
+    margin: 0 20px;
+  }
+
+  #about .social-icons li a {
+    font-size: 14px;
+    line-height: 46px;
+
+    width: 46px;
+    height: 46px;
+  }
+
+  #about .subscribe-form button {
+    font-size: 13px !important;
+
+    padding: 0 50px !important;
+  }
+
+  #about .subscribe-form input {
+    font-size: 13px !important;
+  }
+
+}
+
+span{
+  position: absolute;
+  top: 2.5em;
+}

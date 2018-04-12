@@ -1,0 +1,7 @@
+.right {
+  position: absolute;
+  cursor: pointer;
+  background-color: red;
+  z-index: 4;
+
+}

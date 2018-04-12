@@ -1,0 +1,56 @@
+<div class="up-button go-up active "routerLink="/"><i class="ti-arrow-up"></i><i class="ti-arrow-up"></i></div>
+<div id="about" class="content" appTry21 appRout2>
+  <div class="container-mid">
+
+
+    <div class="container">
+
+      <h1>OUR WEBSITE IS COMING SOON</h1>
+
+
+      <h3>+38 097 923 06 40</h3>
+      <br>
+
+
+      <form #form="ngForm" class="subscribe-form" (submit)="submit(form)">
+
+        <div class="row">
+
+          <div class="col-lg-12">
+
+            <div class="input-group input-group-lg form-group">
+
+              <input #email="ngModel" emailValidation name="email" placeholder="*Enter your email to Subscribe!" class="email form-control" [ngModel]="formModel.email"/>
+              <span class="error-display" *ngIf="email.invalid && email.dirty">{{email?.errors | json}}</span>
+              <div class="input-group-btn">
+
+                <button type="submit"  class="btn btn-primary form-control" [disabled]="form.invalid">
+
+                  <i class="ti-arrow-right first"></i>
+                  <i class="ti-arrow-right second"></i>
+
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </form>
+
+      <ul class="social-icons">
+
+        <!-- <li><a data-placement="bottom" title="Facebook" class="fa fa-facebook" href="#"><div class="overlay"></div></a></li>
+        <li><a data-placement="bottom" title="Twitter" class="fa fa-twitter" href="#"><div class="overlay"></div></a></li>
+        <li><a data-placement="bottom" title="Google+" class="fa fa-google-plus" href="#" ><div class="overlay"></div></a></li> -->
+        <li><a data-placement="bottom" title="Contact" routerLink="/two" class="fa fa-envelope go-down" href="#"><div class="overlay"></div></a></li>
+
+      </ul>
+
+    </div>
+
+  </div>
+</div>

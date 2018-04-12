@@ -1,0 +1,374 @@
+/*****************************************************************
+	
+	
+	@Author			Avanzare
+	@Website		www.avanzare.co
+	@Last Update	10:13 PM Friday, December 18, 2015
+
+	TABLE OF CONTENTS
+	---------------------------
+	 1. Intro - 1
+
+	 
+ *****************************************************************/
+
+
+
+/** 1. INTRO - 1
+ *****************************************************************/
+#intro.intro-1 img.logo
+{
+    margin-bottom: 20px;
+    padding-top: 20px;
+
+    opacity: 0;
+}
+
+#intro.intro-1 img.logo.custom-width
+{
+    width: 260px;
+}
+
+#intro.intro-1 .slide
+{
+    width: 100%;
+    margin: 0 auto;
+
+    text-align: center;
+
+    opacity: 0;
+}
+
+#intro.intro-1 h1
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: auto;
+
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    text-align: center;
+
+    opacity: 0;
+    color: #fff;
+}
+
+#intro.intro-1 h1 span
+{
+    color: #1fb8b2;
+}
+
+#intro.intro-1 p
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: auto;
+
+    padding-bottom: 40px;
+
+    letter-spacing: 2px;
+
+    opacity: 0;
+    color: #fff;
+}
+
+#intro.intro-1 .arrow-wrap
+{
+    display: inline-block;
+    overflow: hidden;
+
+    margin: 0 auto;
+
+    opacity: 0;
+}
+
+#intro.intro-1 .open-overlay i
+{
+    font-size: 36px;
+    line-height: 66px;
+
+    z-index: 2;
+
+    margin: 0 auto;
+
+    cursor: inherit;
+    -webkit-transition: all .6s ease 0s;
+       -moz-transition: all .6s ease 0s;
+            transition: all .6s ease 0s;
+
+    color: inherit;
+    background: rgba(255,255,255,.0);
+}
+
+#intro.intro-1 div.open-overlay
+{
+    position: relative;
+
+    display: block;
+
+    width: 74px;
+    height: 74px;
+    margin: 0 auto;
+
+    cursor: pointer;
+    -webkit-transition: all .6s ease 0s;
+       -moz-transition: all .6s ease 0s;
+            transition: all .6s ease 0s;
+    text-align: center;
+
+    color: #fff;
+    border: solid 4px #fff;
+}
+
+#intro.intro-1 .down-button i
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    -webkit-transition: all 150ms cubic-bezier(1, 0, 0, 1);
+       -moz-transition: all 150ms cubic-bezier(1, 0, 0, 1);
+            transition: all 150ms cubic-bezier(1, 0, 0, 1);
+    text-align: center;
+
+    color: #fff;
+}
+
+#intro.intro-1 .down-button.active i
+{
+    opacity: 1;
+}
+
+#intro.intro-1 .down-button i:first-child
+{
+    top: -300%;
+}
+
+#intro.intro-1 .down-button:hover i:first-child
+{
+    top: 0;
+}
+
+#intro.intro-1 .down-button:hover i:last-child
+{
+    top: 300%;
+}
+
+
+@media only screen and (max-width: 990px), only screen and (max-height: 800px)
+{
+	#intro.intro-1 img.logo.custom-width
+	{
+		width: 220px;
+	}
+
+    #intro.intro-1 h1
+    {
+        font-size: 60px;
+
+        margin-bottom: 32px;
+    }
+
+    #intro.intro-1 p
+    {
+        font-size: 14px;
+
+        padding-bottom: 23px;
+    }
+
+    #intro.intro-1 .open-overlay i
+    {
+        font-size: 24px;
+        line-height: 48px;
+    }
+
+    #intro.intro-1 div.open-overlay
+    {
+        width: 54px;
+        height: 54px;
+
+        border: solid 3px #fff;
+    }
+}
+
+@media only screen and (max-height: 630px)
+{
+    #intro.intro-1 h1
+    {
+        font-size: 55px;
+
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px), only screen and (max-height: 510px)
+{
+    #intro.intro-1 .open-overlay i
+    {
+        font-size: 24px;
+        line-height: 42px;
+    }
+
+    #intro.intro-1 div.open-overlay
+    {
+        width: 48px;
+        height: 48px;
+    }
+
+    #intro.intro-1 p
+    {
+        font-size: 10px;
+
+        padding-bottom: 20px;
+    }
+
+    #intro.intro-1 h1
+    {
+        font-size: 45px;
+
+        margin-bottom: 28px;
+    }
+
+    #intro.intro-1 img.logo
+    {
+        margin-bottom: 10px;
+    }
+	
+	#intro.intro-1 img.logo.custom-width
+	{
+		width: 180px;
+	}
+}
+
+@media only screen and (max-width: 480px), only screen and (max-height: 410px)
+{
+    #intro.intro-1 h1
+    {
+        font-size: 40px;
+
+        margin-bottom: 24px;
+    }
+
+    #intro.intro-1 p
+    {
+        font-size: 10px;
+        font-weight: 300;
+
+        padding-bottom: 16px;
+
+        letter-spacing: 2px;
+    }
+
+    #intro.intro-1 img.logo
+    {
+        margin-bottom: 4px;
+    }
+	
+	#intro.intro-1 img.logo.custom-width
+	{
+		width: 170px;
+	}
+
+    #intro.intro-1 .open-overlay i
+    {
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+    #intro.intro-1 div.open-overlay
+    {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+@media only screen and (max-width: 400px), only screen and (max-height: 310px)
+{
+    #intro.intro-1 h1
+    {
+        font-size: 30px;
+
+        margin-bottom: 22px;
+    }
+
+    #intro.intro-1 img.logo
+    {
+        margin-bottom: 8px;
+    }
+	
+	#intro.intro-1 img.logo.custom-width
+	{
+		width: 160px;
+	}
+
+    #intro.intro-1 p
+    {
+        font-size: 8px;
+        font-weight: 300;
+
+        padding-bottom: 14px;
+
+        letter-spacing: 2px;
+    }
+
+    #intro.intro-1 .open-overlay i
+    {
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    #intro.intro-1 div.open-overlay
+    {
+        width: 40px;
+        height: 40px;
+
+        border: solid 2px #fff;
+    }
+}
+
+@media only screen and (max-width: 355px) ,only screen and (max-height: 280px)
+{
+    #intro.intro-1 h1
+    {
+        font-size: 28px;
+
+        margin-bottom: 20px;
+    }
+
+    #intro.intro-1 img.logo
+    {
+        margin-bottom: 4px;
+    }
+	
+	#intro.intro-1 img.logo.custom-width
+	{
+		width: 140px;
+	}
+
+    #intro.intro-1 p
+    {
+        font-size: 7px;
+        font-weight: 300;
+
+        padding-bottom: 12px;
+
+        letter-spacing: 2px;
+    }
+
+    #intro.intro-1 .open-overlay i
+    {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    #intro.intro-1 div.open-overlay
+    {
+        width: 36px;
+        height: 36px;
+    }
+}
